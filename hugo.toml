@@ -1,8 +1,9 @@
 # baseURL = 'https://lilinascimento.github.io/SD-RP/'
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-# languageCode = 'pt-br'
+# languageCode = 'en-us'
+languageCode = 'pt-br'
 title = 'My New Hugo Site'
+theme = 'hugo-book'
 
 [caches]
   [caches.images]
