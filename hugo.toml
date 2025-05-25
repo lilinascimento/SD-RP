@@ -1,10 +1,36 @@
-# baseURL = 'https://lilinascimento.github.io/SD-RP/'
-baseURL = 'https://example.org/'
+baseURL = 'https://lilinascimento.github.io/SD-RP/'
+# baseURL = 'https://example.org/'
 # languageCode = 'en-us'
 languageCode = 'pt-br'
-title = 'My New Hugo Site'
+title = 'Teaching English'
 theme = 'hugo-book'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# (Optional) If you provide a Disqus shortname, comments will be enabled on
+# all pages.
+disqusShortname = "my-site"
+
+# (Optional) Set this to true if you use capital letters in file names
+disablePathToLower = true
+
+# (Optional) Set this to true to enable 'Last Modified by' date and git author
+#  information on 'doc' type pages.
+enableGitInfo = true
+
+# (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
+# You can remove related files with config below
+disableKinds = ['taxonomy', 'taxonomyTerm']
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  # (Optional, default true) Enables search function with flexsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  # Configuration for indexing can be adjusted in i18n folder per language.
+  BookSearch = false
